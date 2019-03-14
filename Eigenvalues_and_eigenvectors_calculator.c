@@ -1,7 +1,4 @@
 //
-//  main.c
-//  EP1_calculo_numerico
-//
 //  Created by Bruno Adami Serine on 1/25/19.
 //  Copyright © 2019 Bruno Adami. All rights reserved.
 //
