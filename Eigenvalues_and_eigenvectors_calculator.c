@@ -201,9 +201,9 @@ void lerMatriz (double matriz[MAX][MAX], int *n){
     
     while (leMatriz == 1){
         respostaValida = 0;
-        printf("Forneça a ordem da matriz quadrada A:\n");
+        printf("Provide the order of the square matrix A:\n");
         scanf("%d", &tamanho);
-        printf("Forneça agora os elementos da matriz A.\n");
+        printf("Now provide the elements of the matrix A.\n");
     
         for (int i = 0; i < tamanho; i++){
             for (int j = 0; j < tamanho; j++){
@@ -213,20 +213,20 @@ void lerMatriz (double matriz[MAX][MAX], int *n){
         }
     
         *n = tamanho;
-        printf("\nMatriz armazenada:\n\n");
+        printf("\nMatrix stored:\n\n");
         imprimeMatriz(matriz, tamanho);
         while (respostaValida == 0){
-                printf("Sua matriz está correta? [s/n]: ");
+                printf("Is your matrix correct? [y/n]: ");
                 scanf(" %c", &resposta);
             
-                if (resposta == 's') {
+                if (resposta == 'y') {
                     leMatriz = 0;
                     respostaValida = 1;
                     printf("\n");
                 } else if (resposta == 'n') {
                     respostaValida = 1;
-                    printf("\nTudo bem, vamos ler sua matriz novamente!\n");
-                } else printf("\nResposta inválida. Responda apenas com \"s\" ou \"n\".\n");
+                    printf("\nNo problem, let's read your matrix again!\n");
+                } else printf("\nInvalid answer. Just reply with \"y\" or \"n\".\n");
         }
     }
     
